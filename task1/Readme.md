@@ -36,3 +36,7 @@ Here is a video demonstrating the functionality of the application:
   <source src="public/video/demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+You can download the video demonstration of the application using the link below:
+
+[Click here to download the video](public/video/demo.mp4)

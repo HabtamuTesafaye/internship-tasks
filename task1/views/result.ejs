@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Result</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Profile Result</h2>
+            <% if (photo) { %>
+                <img src="/uploads/<%= photo %>" alt="Profile Photo" class="photo" >
+            <% } else { %>
+                <p>No photo uploaded.</p>
+            <% } %>
+            <p><strong>First Name:</strong> <%= firstName %></p>
+            <p><strong>Last Name:</strong> <%= lastName %></p>
+            <p><strong>Grandfather's Name:</strong> <%= grandFatherName %></p>
+            <p><strong>Email:</strong> <%= email %></p>
+            <p><strong>Birth Date:</strong> <%= birthDate %></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -40,3 +40,4 @@ Here is a video demonstrating the functionality of the application:
 You can download the video demonstration of the application using the link below:
 
 [Click here to download the video](public/video/demo.mp4)
+

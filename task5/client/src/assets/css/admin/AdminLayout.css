@@ -1,0 +1,100 @@
+.row.flex-nowrap {
+  display: flex; /* Ensure flexbox is applied */
+  overflow: hidden; /* Prevents overflow on the right */
+}
+
+.admin-sidebar {
+  width: auto; /* Default width for larger screens */
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .admin-sidebar {
+    width: 200px; /* Reduced width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 150px; /* Further reduced width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-sidebar {
+    width: 60px; /* Minimal width for mobile */
+  }
+}
+
+.admin-collapsed {
+  width: 60px; /* Width when collapsed */
+}
+
+.content {
+  transition: margin-left 0.3s ease;
+}
+
+#admin-menu {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.nav-item {
+  margin-bottom: 1rem; /* Increased space between menu items */
+}
+
+.admin-nav-link {
+  display: flex; /* Flexbox for link items */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding for spacing */
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Add transition for background color */
+  min-width: 210px; /* Full width for links */
+}
+
+@media (max-width: 1024px) { /* For very small screens */
+  .admin-nav-link {
+    min-width: auto; /* Remove min-width for small screens */
+  }
+}
+
+.admin-nav-link.active,
+.admin-nav-link:hover {
+  background-color: darkgreen; /* Dark green background */
+  color: white; /* White text for contrast */
+  border-radius: 4px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.admin-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly darker on hover */
+}
+
+.text-white {
+  margin-bottom: 2rem; /* Increased space below the title */
+}
+
+hr {
+  margin: 1.5rem 0; /* Space around the horizontal rule */
+}
+
+.dropdown-menu {
+  position: absolute; /* Ensure proper positioning */
+  z-index: 1000;     /* Ensure dropdown is above other content */
+  left: auto;        /* Default left alignment */
+  right: 0;          /* Align dropdown to the right */
+  top: 100%;         /* Position below the icon */
+}
+
+.dropdown-item {
+  padding: 8px 16px; /* More padding for better aesthetics */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Light background on hover */
+}

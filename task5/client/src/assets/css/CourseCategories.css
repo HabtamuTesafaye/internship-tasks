@@ -1,0 +1,66 @@
+.course-categories {
+    background-color: #f1eded; /* Slightly darker gray for contrast */
+    padding: 60px 15px; /* Adjust padding as needed */
+    width: 100%; /* Full width of the viewport */
+    min-height: 100vh;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .course-categories .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Full height of the section */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+  }
+  
+  .course-categories .row {
+    flex: 1; /* Allow row to expand */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    justify-content: center; /* Center columns horizontally */
+  }
+  
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Margin around each item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-item:hover {
+    transform: translateY(-10px); /* Lift item on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  .icon-wrapper {
+    background-color: #e0e0e0; /* Background color for the icon wrapper */
+    padding: 20px;
+    border-radius: 50%; /* Circle background */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .description {
+    font-size: 0.9rem; /* Smaller font size for description */
+    color: #6c757d; /* Gray color for description text */
+    text-align: center; /* Center align text */
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Add space between buttons */
+  }
+  
+  .button-group .btn {
+    margin: 0 5px; /* Optional: add margin to each button if needed */
+  }
+  
+  

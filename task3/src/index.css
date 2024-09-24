@@ -1,0 +1,182 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar-custom {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 0.5rem 1rem; /* Increase the padding for height */
+}
+
+.navbar-brand .navbar-logo {
+  padding-left: 30px;
+  height: 80px; /* Adjust logo size */
+}
+
+/* Styling for active navbar link */
+.nav-link-custom.active {
+  color: #007bff; /* Change color to highlight the active link */
+  font-weight: bold; /* Ensure active link text is bold */
+  border-bottom: 2px solid #007bff; /* Add an underline or border */
+}
+
+/* Default styling for navbar links */
+.navbar-text .nav-link-custom {
+  color: #333; /* Dark text color for links */
+  font-size: 1.2rem; /* Increase font size of links */
+
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition effects */
+}
+
+/* Change color on hover */
+.navbar-text .nav-link-custom:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+
+.navbar-button {
+  border-radius: 20px; /* Rounded corners for buttons */
+  font-weight: 500; /* Slightly bold text for buttons */
+  font-size: 1rem; /* Increase font size of buttons */
+  padding: 0.5rem 1rem; /* Increase padding for buttons */
+}
+
+.navbar-button.me-2 {
+  margin-right: 0.5rem; /* Space between buttons */
+}
+
+.navbar-button:focus {
+  box-shadow: none; /* Remove default focus shadow */
+}
+
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Menu Styles */
+/* Sidebar Menu Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0; /* Sidebar on the left side */
+  width: 250px;
+  height: 100%;
+  padding-top: 50px;
+  background-color: #343a40; /* Dark gray background */
+  color: #f8f9fa; /* Light color for text */
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%); /* Initially hidden off-screen */
+  transition: transform 0.3s ease;
+  z-index: 1040; /* Ensure it overlays content */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Slide in from the left */
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #f8f9fa; /* Light color for the close button */
+  cursor: pointer;
+}
+
+/* Custom Sidebar Navigation Links */
+.sidebar .nav-link {
+  color: #f8f9fa !important; /* Force light color for the links */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none; /* Remove underline */
+}
+
+.sidebar .nav-link .sidebar-text {
+  margin-left: 10px; /* Space between icon and text */
+}
+
+.sidebar .nav-link.active {
+  color: #007bff !important; /* Active link color */
+  background-color: rgba(0, 123, 255, 0.1); /* Optional background color for active link */
+}
+
+/* Remove underline for links */
+.sidebar .nav-link, .sidebar .nav-link span {
+  text-decoration: none;
+}
+
+
+/* General Navbar Styles */
+.navbar-custom {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  max-height: 60px; /* Adjust logo size */
+}
+
+/* Hide top navbar on mobile */
+.d-lg-none {
+  display: none;
+}
+
+/* Show top navbar only on larger screens */
+.d-lg-flex {
+  display: flex;
+}
+
+/* Bottom Navigation Bar for Mobile */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  z-index: 1030; /* Ensure it sits on top */
+}
+
+.bottom-nav .bottom-nav-link {
+  flex: 1;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.bottom-nav .bottom-nav-link svg {
+  vertical-align: middle;
+  color: #333;
+}
+
+.bottom-nav .bottom-nav-link.active {
+  color: #007bff; /* Highlight active link */
+}
+
+/* Ensure Navbar is responsive */
+@media (max-width: 768px) {
+  .navbar-custom {
+    display: none; /* Hide top navbar on mobile */
+  }
+
+  .bottom-nav {
+    display: block; /* Show bottom navbar on mobile */
+  }
+}

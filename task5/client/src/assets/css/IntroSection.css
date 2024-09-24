@@ -1,0 +1,64 @@
+.intro-section {
+  width: 100%;
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-direction: column; /* Stack text and image vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.text-container {
+  padding: 20px; /* Adjust padding as needed */
+  color: #333;
+  text-align: center; /* Center align text for better appearance */
+  width: 100%; /* Ensure text container takes full width */
+}
+
+.text-container h1 {
+  font-size: 2.5rem; /* Adjust font size */
+  font-weight: 700;
+  margin-bottom: 10px; /* Reduce bottom margin */
+}
+
+.text-container p {
+  font-size: 1rem; /* Adjust font size */
+  line-height: 1.5;
+  margin-bottom: 0; /* Remove bottom margin to reduce space */
+}
+
+.image-container {
+  width: 100%; /* Full width of the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.placeholder-image {
+  width: 100%; /* Full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  position: relative;
+}
+
+.placeholder-image img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container area */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-container h1 {
+    font-size: 2rem; /* Smaller font size */
+  }
+
+  .text-container p {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .placeholder-image {
+    max-height: 300px; /* Limit maximum height of image */
+  }
+}

@@ -1,0 +1,29 @@
+.popular-courses {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 15px; /* Adjust padding as needed */
+    min-height: 100vh;
+    margin-top: 30px;
+    padding: 10p0x;
+  }
+  
+  .course-item {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-item:hover {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
+  }
+  
+  .course-item img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 300px; /* Set a specific height for the images */
+    width: 100%;
+  }
+  
+  .course-item h5 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

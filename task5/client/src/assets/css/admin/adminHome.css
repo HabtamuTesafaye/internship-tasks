@@ -1,0 +1,67 @@
+/* Custom styles for the react-calendar component */
+.react-calendar {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .react-calendar__navigation {
+    background-color: #007bff; /* Blue background for header */
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 8px;
+  }
+  
+  .react-calendar__navigation button {
+    color: white;
+    background: transparent;
+    font-weight: bold;
+  }
+  
+  .react-calendar__tile {
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+  
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+  }
+  
+  .react-calendar__tile--now {
+    background-color: #28a745; /* Green background for today's date */
+    color: white;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+  }
+  
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
+    background-color: #0056b3;
+  }
+  
+  .react-calendar__month-view__days__day--weekend {
+    background-color: #f8d7da; /* Light red for weekends */
+  }
+  
+  .react-calendar__tile--range {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .react-calendar__tile--rangeStart,
+  .react-calendar__tile--rangeEnd {
+    background-color: #ffc107; /* Yellow background for start and end of range */
+    color: white;
+  }
+  

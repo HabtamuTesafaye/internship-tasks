@@ -1,0 +1,24 @@
+.section {
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  box-shadow: none; /* Ensure no box-shadow */
+  border: none; /* Ensure no border */
+  outline: none; /* Ensure no outline */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Adjusted for better visibility */
+  opacity: 0; /* Start with opacity 0 */
+  transform: translateY(30px); /* Start with translation */
+}
+
+.section.in-view {
+  opacity: 1; /* Fade in to fully opaque */
+  transform: translateY(0); /* Move to original position */
+}
+
+.section:not(.in-view) {
+  opacity: 0; /* Fade out */
+  transform: translateY(30px); /* Move down */
+}

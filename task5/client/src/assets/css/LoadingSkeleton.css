@@ -1,0 +1,14 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.spinner-grow {
+  width: 3rem; /* Adjust the size */
+  height: 3rem;
+  margin: 0.5rem; /* Add some space between the spinners */
+}
